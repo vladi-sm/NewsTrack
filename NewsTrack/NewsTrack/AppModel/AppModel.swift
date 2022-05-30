@@ -10,8 +10,6 @@ import Foundation
 // в newsArticles реализовано сохранение раннее загруженных новостей, при загрузке приложения старые новости уже есть на экране (вдруг нет соединения с интернетом)
 
 var newsArticles: [NewsArticle] = [] // переменная для хранения новостей - массив с элементами типа данных NewsArticle
-   
-
 var urlToData: URL{
     let path = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true)[0]+"/data.json" // команда вернет путь в директории пользователя, в виде массива с отображением всех папок
     let urlPath = URL(fileURLWithPath: path) // преобразование в url адрес
@@ -20,8 +18,7 @@ var urlToData: URL{
 
 func loadNews(completionHandler: (() -> Void)?){
     //обеспечиваем сохранение json в файл
-    let url = URL(string: "https://newsapi.org/v2/everything?q=apple&from=2022-02-05&to=2022-02-05&sortBy=popularity&apiKey=52994a6ab6a244fa90f2f887b9262cf5")
-    
+    let url = URL(string: "https://newsapi.org/v2/everything?q=tesla&from=2022-04-30&sortBy=publishedAt&apiKey=52994a6ab6a244fa90f2f887b9262cf5")
     let session = URLSession(configuration: .default) //
     let downloadTask = session.downloadTask(with: url!) { (urlFile, responce, error) in
         if urlFile != nil{ // если путь к файлу не пустой, то копируем
@@ -32,9 +29,6 @@ func loadNews(completionHandler: (() -> Void)?){
             print(newsArticles.count)
         }
     }
-        
-    
-    
     downloadTask.resume() // запускаем загрузку
     
 }
