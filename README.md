@@ -11,10 +11,20 @@ ___
 
 UIKit, UITableViewController, API JSON, SFSafariViewController, UserDefault, GCD concurrency, MVC
 
-![1](https://i.ibb.co/NSpbsrv/News-Track-1.png)
-![2](https://i.ibb.co/ssS45YZ/News-Track-3.png)
-![3](https://i.ibb.co/WDBCvXR/News-Track-2.png)
-![4](https://i.ibb.co/f8cc2D7/News-Track-4.png)
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Фотографии</title>
+ </head>
+ <body>
+  <p>
+    <img src="https://i.ibb.co/NSpbsrv/News-Track-1.png" alt="Фотография 1" width="120" height="210">
+    <img src="https://i.ibb.co/ssS45YZ/News-Track-3.png" alt="Фотография 2" width="120" height="210">
+    <img src="https://i.ibb.co/WDBCvXR/News-Track-2.png" alt="Фотография 3" width="120" height="210">
+    <img src="https://i.ibb.co/f8cc2D7/News-Track-4.png)" alt="Фотография 4" width="120" height="210">
+  </p>
+ </body>
+</html>
 
 ### Краткое описание приложения:
 
